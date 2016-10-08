@@ -7,10 +7,10 @@ function walk(node)
 	
 	var child, next;
 	
-	if (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea'
-	    || node.classList.indexOf('ace_editor') > -1) {
-		return;
-	}
+//	if (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea'
+	//    || node.classList.indexOf('ace_editor') > -1) {
+//		return;
+//	}
 
 	switch ( node.nodeType )  
 	{
@@ -36,10 +36,16 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-	v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
+	v = v.replace(/\bI'm sorry if you're offended\b/g, "Fuck you");
+	v = v.replace(/\bi'm sorry if you're offended\b/g, "fuck you");
+	v = v.replace(/\bSorry if you're offended\b/g, "Fuck you");
+	v = v.replace(/\bsorry if you're offended\b/g, "fuck you");
+	v = v.replace(/\bI'm sorry if you were offended\b/g, "Fuck you");	
+	v = v.replace(/\bi'm sorry if you were offended\b/g, "Fuck you");
+	v = v.replace(/\bI apologize if anyone was offended\b/g, "Fuck you");	
+	v = v.replace(/\bi apologize if anyone was offended\b/g, "Fuck you");	
+	v = v.replace(/\bsorry if you were offended\b/g, "fuck you");
+	v = v.replace(/\bSorry if you were offended\b/g, "Fuck you");
 	
 	textNode.nodeValue = v;
 }
