@@ -1,12 +1,12 @@
 {
 	"manifest_version": 2,
-	"name": "Sorry as F*",
-	"version": "0.2",
+	"name": "'Sorry if I offended you' Apology Fixer",
+	"version": "0.21",
 	"icons": {
 			"32": "32.png",
 			"128": "128.png" 
 			},
-	"description": "Replaces the text 'I'm sorry if you're offended' with 'fuck you'.",
+	"description": "Replaces the text 'I'm sorry if you're offended you' with 'fuck you'.",
 	"content_scripts": 
 	[
 		{
